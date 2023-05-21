@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+ <html lang="en-us">
+
+  <head> 
+   <title>TEMPLATE</title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" type="text/css" href="kid.css">
+       <script src="kid.js"></script>
+        </head>
+
+         <body>
+        <header>
+       <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" title="" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="Home.html" title="Home Page">Home</a>
+    <a href="aboutus.html" title="About us">About us</a>
+   <a href="services.html" title="Services">Services</a>
+  <a href="contact.html" title="Contact Us">Contact</a>
+ </div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<h1  class="moving-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</h1>
+
+ <div class="slideshow-container">
+  <div class="mySlides fade">
+   <div class="numbertext">1 / 4
+    <img src="" alt="Back.jpg" style="width:30%">
+     <div class="text">
+      <strong>TEMPLATE</strong>
+       <div class="mySlides fade">
+        <div class="numbertext">2 / 4
+         <img src="" alt="Back.jpg" style="width:100%">
+          <div class="text">
+           <strong>TEMPLATE</strong>
+            <div class="mySlides fade">
+             <div class="numbertext">3 / 4
+              <img src="" alt="Back.jpg" style="width:100%">
+               <div class="text">
+                <strong>TEMPLATE</strong>
+                 <div class="mySlides fade">
+                  <div class="numbertext">4 / 4
+                   <img src="" alt="Back.jpg" style="width:100%">
+                    <div class="text">
+                     <strong>TEMPLATE</strong>
+                      <div>
+                      <a class="prev" onclick="plusSlides(-1)"> &lt;</a>
+                     <a class="next" onclick="plusSlides(1)"> &gt;</a>
+                    <br>
+  
+                   <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                 <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
+<P>
+ <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+ proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</strong>
+  </P>
+
+   <h1>TEMPLATE OF BLOG:</h1>
+
+    <P>
+     <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&quot;</strong>
+      </P>
+
+       <footer class="footer-section spad">
+        <h2> Social Media Pages</h2>
+         <a href="#" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com/guco_mcjay/" class="fa fa-instagram"></a>
+
+           <div class="container">
+            <div class="row">
+             <div class="col-lg-3 col-md-6">
+            <div class="footer-widget about-widget">  
+           <div class="col-lg-7 order-1 order-lg-2 p-0">
+          <ul class="footer-menu">
+         <li class="active"><a href="Home.html" title="Home Page">Home</a></li>
+        <li><a href="aboutus.html" title="About us">About us</a></li>
+       <li><a href="services.html" title="Services">Services</a></li>
+      <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/62d75c92b0d10b6f3e7d32bd/1g8ck3ia3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+
+<div class="footer-buttom">
+ <div class="container">
+  <div class="row">
+   <div class="col-lg-4 order-2 order-lg-1 p-0">
+    <div class="copyright">
+     <strong>ABASILIM KOSISOCHUKWU &copy;Copyright</strong>
+      <script>document.write(new Date().getFullYear());</script> 
+       <strong>TEMPLATE | All Rights Reserved</strong>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+  </footer>
+
+ </body>
+
+</html>
